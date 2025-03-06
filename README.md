@@ -63,8 +63,8 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ahsanma)
+- Website - [ahsanma](https://github.com/ahsanma)
+- Frontend Mentor - [@ahsanma](https://www.frontendmentor.io/profile/ahsanma)
 
 ## Acknowledgments
 
