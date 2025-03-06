@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-700: hsl(0, 0%, 20%);
+  --clr-gray-800: hsl(0, 0%, 12%);
+  --clr-gray-900: hsl(0, 0%, 8%);
+
+  --padding-small: 0.75rem; /* 12px */
+  --padding-medium: 2.5rem; /* 40px */
+  --padding-small-m: 0.75rem; /* 12px */
+  --padding-medium-m: 1.5rem; /* 24px */
+
+  --fs-small: 0.875rem; /* 14px */
+  --fs-medium: 1rem;
+  --fs-large: 1.5rem; /* 24px */
+
+  --br-small: 0.5rem;
+  --br-medium: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+a:hover,
+a:focus-visible {
+  outline: var(--clr-green);
+  background-color: var(--clr-green);
+  color: var(--clr-gray-900);
+}
+
+ul {
+  list-style: none;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  background-color: var(--clr-gray-900);
+}
+
+.social-links-card {
+  width: 24rem;
+  background-color: var(--clr-gray-800);
+  border-radius: var(--br-medium); /* 12px */
+  padding: var(--padding-medium); /* 40px */
+  gap: 1.5rem; /* 24px */
+}
+
+@media (width < 375px) {
+  .social-links-card {
+    width: 20.438rem;
+    padding: var(--padding-medium-m); /* 24px */
+  }
+}
+
+.social-links-card__headshot {
+  max-width: 5.5rem; /* 88px */
+  max-height: 5.5rem; /* 88px */
+  border-radius: 50%;
+}
+
+.social-links-card__title-wrapper,
+.social-links-card__bio,
+.social-links {
+  align-self: stretch;
+  text-align: center;
+}
+
+.social-links-card__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* 4px */
+}
+
+.social-links-card__title,
+.social-links-card__location,
+.social-links-card__bio,
+.social-links__link {
+  line-height: 1.5;
+}
+
+.social-links-card__title {
+  font-size: var(--fs-large);
+  color: var(--clr-white);
+  font-weight: 600;
+}
+
+.social-links-card__location {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--clr-green);
+}
+
+.social-links-card__bio {
+  font-size: var(--fs-small);
+  font-weight: 400;
+  color: var(--clr-white);
+}
+
+.social-links {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links__link {
+  display: block;
+  padding-block: var(--padding-small); /* 12px */
+  font-size: var(--fs-small);
+  background-color: var(--clr-gray-700);
+  border-radius: var(--br-small); /* 8px */
+  font-weight: 700;
+}
